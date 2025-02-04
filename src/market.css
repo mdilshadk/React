@@ -1,0 +1,28 @@
+.itm{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+.itms{
+    border: 3px solid rgb(111, 110, 110);
+    border-radius: 10px;
+    width: 300px;
+    height: 430px;
+
+}
+.navi{
+    text-align: center;
+}
+.buy{
+    
+    color: white;
+    padding: 5px;
+    margin-top: 16px;
+   ;
+}
+.star{
+    color: rgb(237, 237, 8);
+}

@@ -1,0 +1,27 @@
+.fc{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    margin-top: 50px;
+   
+}
+.lc{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    gap: 50px;
+}
+.imgs{
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+}
+.cols{
+    
+    height: 300px;
+    width: 550;
+}
+
+
