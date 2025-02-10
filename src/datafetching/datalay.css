@@ -1,0 +1,11 @@
+.table{
+    border: 1px solid black;
+}
+tr,th{
+    border: 1px solid black;
+}
+.body{
+    background-image: url("whether.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

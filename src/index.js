@@ -15,6 +15,14 @@ import {BrowserRouter ,Routes,Route} from 'react-router-dom'
 import Roottask from './Roottask';
 import Aboutp from './Aboutp';
 import Contactp from './contactp';
+import Amason from './Amason';
+import Login from './Login';
+import Cartp from './Cartp';
+import Counter from './state/Counter';
+import Darkmode from './state/Darkmode';
+import Users from './datafetching/Users';
+import Datalay from './datafetching/datalay';
+import Whether from './datafetching/Whether';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +33,15 @@ root.render(
       <Route path='/home' element={<Roottask></Roottask>}></Route>
       <Route path='/about' element={<Aboutp></Aboutp>}></Route>
       <Route path='/contact' element={<Contactp></Contactp>}></Route>
+      <Route path='/amason' element={<Amason></Amason>}></Route>
+      <Route path='/login' element={<Login></Login>}></Route>
+      <Route path='/cart' element={<Cartp></Cartp>}></Route>
+      <Route path='/count' element={<Counter/>}></Route>
+      <Route path='/dark' element={<Darkmode></Darkmode>}></Route>
+      <Route path='/api' element={<Users></Users>}></Route>
+      <Route path='/whether' element={<Whether></Whether>}></Route>
+      
+
       </Routes>
 
       </BrowserRouter>
