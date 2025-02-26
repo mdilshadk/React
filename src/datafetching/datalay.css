@@ -5,7 +5,14 @@ tr,th{
     border: 1px solid black;
 }
 .body{
-    background-image: url("whether.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(214, 211, 211);
+    height: 800px;
+    width: 100%;
+    padding-top: 150px;
+}
+.box{
+    background-color: rgb(91, 178, 232);
+    height: 400px;
+    width: 400px;
+    margin-left: 550px;
 }

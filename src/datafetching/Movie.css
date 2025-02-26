@@ -1,0 +1,24 @@
+.poster{
+    height: 450px;
+    width: 300px;
+}
+.home{
+    height: 800px;
+    width: 100%;
+    
+}
+.mvs{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+      
+       
+}
+.click{
+    
+    padding: 20px;
+    border-radius: 10px;
+}
