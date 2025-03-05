@@ -33,37 +33,55 @@ import Mainp from './rendering/Mainp';
 import Check from './rendering/Check';
 import Calcstate from './datafetching/Calcstate';
 import Todotail from './Todotail';
+import { Provider } from 'react-redux';
+import store from './Counterstore';
+import Redux from './Redux';
+import Cartredux from './Cartredux';
+import Contextprovider from './context/Contextprovider';
+import Axesscontext from './context/Axesscontext';
+import Langprov from './context/Langprov';
+import Language from './context/Language';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter><Routes>
-      <Route path='/a' element={<Styling></Styling>} ></Route>
-      <Route path='/mapping' element={<Mapping/>} ></Route>
-      <Route path='/home' element={<Roottask></Roottask>}></Route>
-      <Route path='/about' element={<Aboutp></Aboutp>}></Route>
-      <Route path='/contact' element={<Contactp></Contactp>}></Route>
-      <Route path='/amason' element={<Amason></Amason>}></Route>
-      <Route path='/login' element={<Login></Login>}></Route>
-      <Route path='/cart' element={<Cartp></Cartp>}></Route>
-      <Route path='/count' element={<Counter/>}></Route>
-      <Route path='/dark' element={<Darkmode></Darkmode>}></Route>
-      <Route path='/api' element={<Users></Users>}></Route>
-      <Route path='/whether' element={<Whether></Whether>}></Route>
-      <Route path='/datalay' element={<Datalay></Datalay>}></Route>
-      <Route path='/movie' element={<Movie></Movie>}></Route>
-      <Route path='/movieadd/:id' element={<Movieadd></Movieadd>}></Route>
-      <Route path='/one' element={<One></One>}></Route>
-      <Route path='/forms' element={<Forms></Forms>}></Route>
-      <Route path='/loginf' element={<Loginf></Loginf>}></Route>
-      <Route path='/mainp' element={<Mainp></Mainp>}></Route>
-      <Route path='/check' element={<Check></Check>}></Route>
-      <Route path='/calc' element={<Calcstate></Calcstate>}></Route>
-      <Route path='/todot' element={<Todotail></Todotail>}></Route>
+    <Contextprovider>
+      <Langprov>
+      <BrowserRouter>
+        <Routes>
 
-      </Routes>
+          <Route path='/a' element={<Styling></Styling>} ></Route>
+          <Route path='/mapping' element={<Mapping/>} ></Route>
+          <Route path='/home' element={<Roottask></Roottask>}></Route>
+          <Route path='/about' element={<Aboutp></Aboutp>}></Route>
+          <Route path='/contact' element={<Contactp></Contactp>}></Route>
+          <Route path='/amason' element={<Amason></Amason>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/cart' element={<Cartp></Cartp>}></Route>
+          <Route path='/count' element={<Counter/>}></Route>
+          <Route path='/dark' element={<Darkmode></Darkmode>}></Route>
+          <Route path='/api' element={<Users></Users>}></Route>
+          <Route path='/whether' element={<Whether></Whether>}></Route>
+          <Route path='/datalay' element={<Datalay></Datalay>}></Route>
+          <Route path='/movie' element={<Movie></Movie>}></Route>
+          <Route path='/movieadd/:id' element={<Movieadd></Movieadd>}></Route>
+          <Route path='/one' element={<One></One>}></Route>
+          <Route path='/forms' element={<Forms></Forms>}></Route>
+          <Route path='/loginf' element={<Loginf></Loginf>}></Route>
+          <Route path='/mainp' element={<Mainp></Mainp>}></Route>
+          <Route path='/check' element={<Check></Check>}></Route>
+          <Route path='/calc' element={<Calcstate></Calcstate>}></Route>
+          <Route path='/todot' element={<Todotail></Todotail>}></Route>
+          <Route path='/cartre' element={<Cartredux></Cartredux>}></Route>
+          <Route path='/context' element={<Axesscontext></Axesscontext>}></Route>
+          <Route path='/language' element={<Language></Language>}></Route>
+
+
+        </Routes>
 
       </BrowserRouter>
+      </Langprov>
+    </Contextprovider>
   </React.StrictMode>
 
 

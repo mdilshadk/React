@@ -31,7 +31,7 @@ const handlechange=(event)=>{
     <div className='home'>
         <div className='navi d-flex justify-content-around '>
             <h3 className=' mt-2 lead'><MdMovie /><b> MOVIE</b>details</h3>
-            <button className=' rounded-2 border border-2 p-1 mt-2 bg-light border-black  shadow-sm'>sign in</button>
+            <button className=' rounded-2  p-1 mt-2 bg-light border-black  shadow-sm'>sign in</button>
         </div>
             <div className='text-center mt-5 '>
             <input className='p-2  rounded-start-pill border border-black border-3 shadow-sm border-end-0'  onChange={handlechange} type="text" placeholder='Search movies' />

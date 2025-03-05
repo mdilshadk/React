@@ -4,7 +4,11 @@ import { FaAmazon } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { minus, plus } from './Counterslice';
 const Cartp = () => {
+   const cart=useSelector((state)=>state.counter.data);
+   const dispatch=useDispatch();
   return (
     <div>
         <div className='navi d-flex justify-content-between bg-black bg-gradient text-light p-3 '>
@@ -14,7 +18,7 @@ const Cartp = () => {
           </div>
           
         <div className='d-flex'>
-          <select name="" id="" className='all rounded-start-3' >
+          <select name="" id="" className='all rounded-start-3 text-black' >
               <option value="">All</option>
               <option value="">Alexa Skills</option>
               <option value="">Amason Devices</option>
@@ -29,18 +33,19 @@ const Cartp = () => {
           <Link to='/cart' className='text-decoration-none text-warning'><h5 ><FaShoppingCart /></h5></Link>
         </div>
       </div>
-
-        <div className='d-flex justify-content-center mt-5 gap-5'>
-            <div className='img'>
-                <img src={img} alt="" />
-            </div>
-            <div>
-                <h2><b>Your Amason cart is Empty</b></h2>
-                <p className='text-primary'>shop today's deals</p>
-                <button className='bg-warning rounded-pill p-2 border w-50'>Sign into your account</button>
-                <button className='rounded-pill p-2 border border-dark ms-2'>Sign up now</button>
-            </div>
-        </div>
+      <div>
+        {cart.map((items)=>(
+          <div className='d-flex p-3 gap-4'>
+            <img className='w-16' src={items.prod} alt="" />
+            <h2>{items.name}</h2>
+            <button className='text-[25px]' onClick={()=>dispatch(plus(items.id))}>+</button>
+            <h2>{items.quantity}</h2>
+            <button className='text-[25px]' onClick={()=>dispatch(minus(items.id))}>-</button>
+          </div>
+        ))}
+        
+      </div>
+        
     </div>
   )
 }

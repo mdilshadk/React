@@ -23,35 +23,35 @@ const Calcstate = () => {
         <table>
           <tr>
             <td colSpan={3}>
-              <input type="text" value={num} className="text-dark border border-0 text-end" readOnly />
+              <input type="text" value={num} className="text-dark  text-end" readOnly />
               <div className='text-dark text-end fs-4' >{result}</div>
             </td>
-            <td><button className="bg-warning " onClick={clear}>C</button></td>
+            <td ><button className="bt bg-warning " onClick={clear}>C</button></td>
           </tr>
           <tr>
-            <td><button onClick={() => click("1")}>1</button></td>
-            <td><button onClick={() => click("2")}>2</button></td>
-            <td><button onClick={() => click("3")}>3</button></td>
-            <td><button className="bg-warning" onClick={() => click("*")}>x</button></td>
+            <td><button className="bt" onClick={() => click("1")}>1</button></td>
+            <td><button className="bt" onClick={() => click("2")}>2</button></td>
+            <td><button className="bt" onClick={() => click("3")}>3</button></td>
+            <td><button className=" bt bg-warning" onClick={() => click("*")}>x</button></td>
           </tr>
           <tr>
-            <td><button onClick={() => click("4")}>4</button></td>
-            <td><button onClick={() => click("5")}>5</button></td>
-            <td><button onClick={() => click("6")}>6</button></td>
-            <td><button className="bg-warning" onClick={() => click("/")}>/</button></td>
+            <td><button className="bt" onClick={() => click("4")}>4</button></td>
+            <td><button className="bt" onClick={() => click("5")}>5</button></td>
+            <td><button className="bt" onClick={() => click("6")}>6</button></td>
+            <td><button className=" bt bg-warning" onClick={() => click("/")}>/</button></td>
           </tr>
           <tr>
-            <td><button onClick={() => click("7")}>7</button></td>
-            <td><button onClick={() => click("8")}>8</button></td>
-            <td><button onClick={() => click("9")}>9</button></td>
-            <td><button className="bg-warning" onClick={() => click("+")}>+</button></td>
+            <td><button className="bt" onClick={() => click("7")}>7</button></td>
+            <td><button className="bt" onClick={() => click("8")}>8</button></td>
+            <td><button className="bt" onClick={() => click("9")}>9</button></td>
+            <td><button className=" bt bg-warning" onClick={() => click("+")}>+</button></td>
           </tr>
           <tr>
             <td colSpan={2}>
-              <button className="w-100 bg-warning" onClick={calculate}>=</button>
+              <button className="bt w-100 bg-warning" onClick={calculate}>=</button>
             </td>
-            <td><button onClick={() => click("0")}>0</button></td>
-            <td><button className="bg-warning" onClick={() => click("-")}>-</button></td>
+            <td><button className="bt" onClick={() => click("0")}>0</button></td>
+            <td><button className=" bt bg-warning" onClick={() => click("-")}>-</button></td>
           </tr>
         </table>
       </div>

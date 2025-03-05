@@ -8,7 +8,7 @@ const Login = () => {
         <div className='log mt-5 rounded-3 border border-dark p-3'>
             <h3>Sign in</h3>
             <p><b>Email or mobile phone number</b></p>
-            <input type="text" className='rounded-3 w-100' /><br /><br />
+            <input type="text" className='rounded-3 w-100 border border-dark' /><br /><br />
             <button className='rounded-pill bg-warning w-100 border p-1'>Continue</button><br /><br />
             <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
             <p> Need help?<br />

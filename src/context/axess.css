@@ -1,0 +1,10 @@
+.light{
+    background-color: rgb(223, 217, 217);
+    height: 400px;
+    width: 400px;
+}
+.dark{
+    background-color: rgb(43, 42, 42);
+    height: 400px;
+    width: 400px;
+}

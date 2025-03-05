@@ -64,7 +64,6 @@ const Todotail = () => {
                   < button className="bg-red-500 text-white p-2 rounded hover:bg-red-700" onClick={()=>deletb(index)}>Delete</button></div>
                   </div> 
                 </td>
-                
               </tr>
             ))}
           </tbody>
